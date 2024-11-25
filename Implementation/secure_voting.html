@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Voting</title>
+    <link rel="stylesheet" href="secure_voting.css">
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", displayResults);
+    </script> -->
+    
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Secure Voting</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="results.html" class="nav-link">Results</a></li>
+                <li><a href="logout.html" class="nav-link">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="voting-section">
+        <h2>Welcome to Secure Voting</h2>
+        <p>Select a candidate to cast your vote. Your vote matters!</p>
+
+        <div class="candidates">
+            <div class="candidate-card" id="candidate1">
+                <h3>Candidate 1</h3>
+                <p>John Doe</p>
+                <button class="vote-button" data-candidate="1">Vote</button>
+            </div>
+            <div class="candidate-card" id="candidate2">
+                <h3>Candidate 2</h3>
+                <p>Jane Smith</p>
+                <button class="vote-button" data-candidate="2">Vote</button>
+            </div>
+            <div class="candidate-card" id="candidate3">
+                <h3>Candidate 3</h3>
+                <p>Alex Johnson</p>
+                <button class="vote-button" data-candidate="3">Vote</button>
+            </div>
+        </div>
+
+        <div class="submit-section">
+            <button class="submit-button">Submit Vote</button>
+        </div>
+        <!-- <div id="results"></div> -->
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Secure Voting. All rights reserved.</p>
+    </footer>
+
+    <script src="secure_voting.js"></script>
+</body>
+</html>

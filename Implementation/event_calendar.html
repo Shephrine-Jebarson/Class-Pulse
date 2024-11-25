@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Calendar - Class Pulse</title>
+    <link rel="stylesheet" href="event_calendar.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Class Pulse</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore Features</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="calendar-section">
+        <h1>Event Calendar</h1>
+        <div class="calendar">
+            <div class="calendar-header">
+                <button id="prev-month">&lt;</button>
+                <h2 id="month-year"></h2>
+                <button id="next-month">&gt;</button>
+            </div>
+            <div class="calendar-grid">
+                <!-- Calendar days will be dynamically populated by JavaScript -->
+            </div>
+        </div>
+        <div class="event-form">
+            <h2>Add Event</h2>
+            <form id="add-event-form">
+                <input type="text" id="event-title" placeholder="Event Title" required>
+                <input type="date" id="event-date" required>
+                <button type="submit">Add Event</button>
+            </form>
+            <ul id="event-list"></ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Class Pulse. All rights reserved.</p>
+    </footer>
+
+    <script src="event_calendar.js"></script>
+</body>
+</html>

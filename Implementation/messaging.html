@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messaging</title>
+    <link rel="stylesheet" href="messaging.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Class Pulse Messaging</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="explore.html">Explore Features</a></li>
+                <li><a href="logout.html" class="nav-link">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="messaging-section">
+        <div class="chat-window">
+            <div class="messages" id="message-list">
+                <!-- Messages will be dynamically added here -->
+            </div>
+            <form class="message-form" id="message-form">
+                <input type="text" id="message-input" placeholder="Type your message..." autocomplete="off">
+                <button type="submit" class="send-button">Send</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Class Pulse. All rights reserved.</p>
+    </footer>
+
+    <script src="messaging.js"></script>
+</body>
+</html>
